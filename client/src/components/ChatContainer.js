@@ -8,9 +8,7 @@ const ChatContainer = ({ user }) => {
 
 	return (
 		<div className="chat-container">
-			<ChatHeader
-			// user={user}
-			/>
+			<ChatHeader user={user} />
 			<div>
 				<button
 					className="option"
