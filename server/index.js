@@ -7,9 +7,9 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 require('dotenv').config();
 
-// const uri = process.env.URI;
-const uri =
-	'mongodb+srv://michaelsatumba:tinder@cluster0.mn4m5q4.mongodb.net/Cluster0?retryWrites=true&w=majority';
+const uri = process.env.URI;
+// const uri =
+// 	'mongodb+srv://michaelsatumba:tinder@cluster0.mn4m5q4.mongodb.net/Cluster0?retryWrites=true&w=majority';
 
 const app = express();
 app.use(cors());

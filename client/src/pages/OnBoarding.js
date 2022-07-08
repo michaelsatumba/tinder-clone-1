@@ -22,16 +22,12 @@ const OnBoarding = () => {
 
 	let navigate = useNavigate();
 
-	// console.log(formData);
-
 	const handleSubmit = async (e) => {
-		// console.log('submitted');
 		e.preventDefault();
 		try {
 			const response = await axios.put('http://localhost:8000/user', {
 				formData,
 			});
-			// console.log(response);
 			const success = response.status === 200;
 			if (success) navigate('/dashboard');
 		} catch (err) {
@@ -40,7 +36,6 @@ const OnBoarding = () => {
 	};
 
 	const handleChange = (e) => {
-		console.log('e', e);
 		const value =
 			e.target.type === 'checkbox' ? e.target.checked : e.target.value;
 		const name = e.target.name;
