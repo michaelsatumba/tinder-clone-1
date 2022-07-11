@@ -20,7 +20,7 @@ const ChatInput = ({
 		};
 
 		try {
-			await axios.post('https://tinderclonebacke.herokuapp.com/message', {
+			await axios.post('https://tinder-clone-backend19.herokuapp.com/message', {
 				message,
 			});
 			getUserMessages();

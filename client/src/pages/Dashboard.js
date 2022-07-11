@@ -15,7 +15,7 @@ const Dashboard = () => {
 	const getUser = async () => {
 		try {
 			const response = await axios.get(
-				'https://tinderclonebacke.herokuapp.com/user',
+				'https://tinder-clone-backend19.herokuapp.com/user',
 				{
 					params: { userId },
 				}
@@ -29,7 +29,7 @@ const Dashboard = () => {
 	const getGenderedUsers = async () => {
 		try {
 			const response = await axios.get(
-				'https://tinderclonebacke.herokuapp.com/gendered-users',
+				'https://tinder-clone-backend19.herokuapp.com/gendered-users',
 				{
 					params: { gender: user?.gender_interest },
 				}
@@ -52,7 +52,7 @@ const Dashboard = () => {
 
 	const updateMatches = async (matchedUserId) => {
 		try {
-			await axios.put('https://tinderclonebacke.herokuapp.com/addmatch', {
+			await axios.put('https://tinder-clone-backend19.herokuapp.com/addmatch', {
 				userId,
 				matchedUserId,
 			});

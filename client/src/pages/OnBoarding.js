@@ -26,7 +26,7 @@ const OnBoarding = () => {
 		e.preventDefault();
 		try {
 			const response = await axios.put(
-				'https://tinderclonebacke.herokuapp.com/user',
+				'https://tinder-clone-backend19.herokuapp.com/user',
 				{
 					formData,
 				}

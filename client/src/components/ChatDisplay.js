@@ -12,7 +12,7 @@ const ChatDisplay = ({ user, clickedUser }) => {
 	const getUsersMessages = async () => {
 		try {
 			const response = await axios.get(
-				'https://tinderclonebacke.herokuapp.com/messages',
+				'https://tinder-clone-backend19.herokuapp.com/messages',
 				{
 					params: { userId: userId, correspondingUserId: clickedUserId },
 				}
@@ -26,7 +26,7 @@ const ChatDisplay = ({ user, clickedUser }) => {
 	const getClickedUsersMessages = async () => {
 		try {
 			const response = await axios.get(
-				'https://tinderclonebacke.herokuapp.com/messages',
+				'https://tinder-clone-backend19.herokuapp.com/messages',
 				{
 					params: { userId: clickedUserId, correspondingUserId: userId },
 				}
