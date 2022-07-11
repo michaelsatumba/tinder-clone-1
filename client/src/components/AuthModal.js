@@ -25,7 +25,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
 			}
 
 			const response = await axios.post(
-				`https://tinderclonebacke.herokuapp.com/${
+				`https://tinder-clone-backend19.herokuapp.com/${
 					isSignUp ? 'signup' : 'login'
 				}`,
 				{ email, password }
