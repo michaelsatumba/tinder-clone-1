@@ -1,4 +1,4 @@
-const PORT = 8000;
+const port = process.env.PORT || 8000;
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const { v4: uuidv4 } = require('uuid');
@@ -14,8 +14,12 @@ app.use(cors());
 app.use(express.json());
 
 // Default
+// app.get('/', (req, res) => {
+// 	res.json('Hello to my app');
+// });
+
 app.get('/', (req, res) => {
-	res.json('Hello to my app');
+	res.json('server start');
 });
 
 // test to retrive data from db
@@ -263,4 +267,4 @@ app.post('/message', async (req, res) => {
 	}
 });
 
-app.listen(PORT, () => console.log('server running on PORT ' + PORT));
+app.listen(port, () => console.log(`server running on PORT ${port}`));
