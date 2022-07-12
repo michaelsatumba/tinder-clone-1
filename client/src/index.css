@@ -240,6 +240,9 @@ nav .logo-container .logo {
 	width: 400px;
 	height: 650px;
 	/* background-color: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card {
@@ -248,15 +251,14 @@ nav .logo-container .logo {
 	border-radius: 30px;
 	background-size: cover;
 	background-position: center;
-	/* background-color: red; */
+	/* background-color: blue; */
 }
 
 @media screen and (max-width: 500px) {
-	.responsive {
-		margin-left: 40px;
-		margin-right: 10px;
-		width: 266px;
-		height: 433px;
+	.card {
+		/* margin-right: 30px; */
+		width: 200px;
+		height: 400px;
 	}
 }
 
