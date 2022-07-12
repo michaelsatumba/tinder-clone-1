@@ -218,6 +218,7 @@ nav .logo-container .logo {
 .dashboard {
 	display: flex;
 	justify-content: space-between;
+	/* background-color: red; */
 }
 
 .dashboard .swipe-container {
@@ -227,15 +228,18 @@ nav .logo-container .logo {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	/* background-color: red; */
 }
 
 .swipe {
 	position: absolute;
+	/* background-color: red; */
 }
 
 .dashboard .card-container {
 	width: 400px;
 	height: 650px;
+	/* background-color: red; */
 }
 
 .card {
@@ -244,6 +248,16 @@ nav .logo-container .logo {
 	border-radius: 30px;
 	background-size: cover;
 	background-position: center;
+	/* background-color: red; */
+}
+
+@media screen and (max-width: 500px) {
+	.responsive {
+		margin-left: 40px;
+		margin-right: 10px;
+		width: 266px;
+		height: 433px;
+	}
 }
 
 .card h3 {
@@ -264,8 +278,6 @@ nav .logo-container .logo {
 	width: 30%;
 	text-align: center;
 	z-index: 1;
-	min-height: 100%;
-	bottom: 0;
 }
 
 .chat-container .chat-container-header {

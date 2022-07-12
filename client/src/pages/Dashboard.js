@@ -97,7 +97,7 @@ const Dashboard = () => {
 								>
 									<div
 										style={{ backgroundImage: 'url(' + genderedUser.url + ')' }}
-										className="card"
+										className="card responsive"
 									>
 										<h3>{genderedUser.first_name}</h3>
 										<h3>{genderedUser.about}</h3>
