@@ -87,7 +87,7 @@ nav .logo-container .logo {
 .overlay {
 	width: 100vw;
 	height: 100vh;
-	position: fixed;
+	/* position: fixed; */
 	background: linear-gradient(
 			to bottom,
 			rgba(0, 0, 0, 0.65) 0%,
@@ -97,7 +97,7 @@ nav .logo-container .logo {
 }
 
 .home {
-	margin-top: 30vh;
+	margin-top: 20vh;
 }
 
 /*-------- Auth Modal --------*/
@@ -316,6 +316,7 @@ nav .logo-container .logo {
 	width: 30px;
 	border-radius: 15px;
 	overflow: hidden;
+	/* overflow: scroll; */
 	margin: 10px;
 }
 
